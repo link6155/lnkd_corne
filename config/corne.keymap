@@ -41,15 +41,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  !  |  @  |  #  |  $  |  %  |   | PGUP|  UP | PGDN| HOME|     |  DEL |
-// |BTCLR | BT1 | BT2 | BT3 | BT4 |     |   | LFT | DWN | RGT | END |     |  "|" |
+// |  ~   |  !  |  @  |  #  |  $  |  %  |   |     | PGUP| UP  | PGDN| HOME|  DEL |
+// |BTCLR | BT1 | BT2 | BT3 | BT4 |     |   |     | LFT | DWN | RGT | END |  "|" |
 // |      |     |     |     |     |     |   |     |     |     | "[" | "]" |   \  |
 //                    | GUI |     | SPC |   |     |     | ALT |
                         bindings = <
-   &kp GRAVE  &kp EXCL        &kp AT          &kp HASH        &kp DLLR       &kp PRCNT     &kp PG_UP &kp UP    &kp PG_DN   &kp HOME &trans    &kp DEL
-   &kp LCTRL  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4   &trans        &kp LEFT  &kp DOWN  &kp RIGHT   &kp END  &trans    &kp PIPE
-   &trans     &trans          &trans          &trans          &trans         &trans        &trans    &trans    &trans      &kp LBRC &kp RBRC  &kp BSLH
-                                              &kp LGUI        &trans         &kp SPACE     &trans    &trans    &kp RALT
+   &kp GRAVE  &kp EXCL        &kp AT          &kp HASH        &kp DLLR       &kp PRCNT     &trans    &kp PG_UP  &kp UP    &kp PG_DN   &kp HOME  &kp DEL
+   &kp LCTRL  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4   &trans        &trans    &kp LEFT   &kp DOWN  &kp RIGHT   &kp END   &kp PIPE
+   &trans     &trans          &trans          &trans          &trans         &trans        &trans    &trans     &trans    &kp LBRC    &kp RBRC  &kp BSLH
+                                              &kp LGUI        &trans         &kp SPACE     &trans    &trans     &kp RALT
                         >;
                 };
         };
